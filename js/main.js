@@ -77,8 +77,8 @@
         submitHandler: function (form) {
             $(form).ajaxSubmit({
                 type: "POST",
-                data: $(form).serialize(),
-                url: "sendmail.php",
+              //  data: $(form).serialize(),
+                url: "https://script.google.com/macros/s/AKfycbzmiRN0hYr4hpX21H6cYrRaQ-zRBC-Pui3r11RojcRJDCKk9eHcCz8zpIXbieVQ5quU/exec",
                 success: function () {
                     $('#contact-form #success').fadeIn();
                 },
