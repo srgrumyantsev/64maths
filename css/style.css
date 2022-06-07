@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
-
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -226,7 +224,6 @@ a:hover {
 .navbar .nav-item:last-child .nav-link {
   padding-right: 0;
 }
-
 
 .dropdown-menu {
   background: #222222;
