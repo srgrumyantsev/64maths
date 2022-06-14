@@ -343,11 +343,13 @@ a:hover {
   background: #57a7d9;
   background-size: cover;
   background-attachment: fixed;
-  padding: 80px 0;
+  padding: 50px 0;
+  margin-top: 20px;
   text-align: center;
   position: relative;
   color: #fff;
 }
+
 
 #call-to-action .block {
   position: relative;
@@ -390,7 +392,7 @@ a:hover {
 }
 
 #about {
-  padding: 110px 0;
+  padding: 50px 0;
 }
 
 #about .block {
@@ -442,7 +444,7 @@ a:hover {
 }
 
 .works {
-  padding: 80px 0;
+  padding: 5px 0 5px 0;
   background: #FCFCFC;
 }
 
@@ -598,7 +600,7 @@ figure figcaption p {
 }
 
 #feature {
-  padding: 80px 0;
+  padding: 50px 0 50px 0;
 }
 
 #feature .media {
@@ -669,7 +671,7 @@ figure figcaption p {
 }
 
 #blog-full-width {
-  padding: 40px 0 80px;
+  padding: 40px 0 80px 0;
 }
 
 article {
