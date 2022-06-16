@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -28,7 +28,7 @@ Primary style
 }
 
 
-xslide 
+xslide
 
 -------------------------------- */
 .cd-headline.slide span {
@@ -47,14 +47,14 @@ xslide
 .cd-headline.slide b.is-visible {
   top: 0;
   opacity: 1;
-  -webkit-animation: slide-in 0.6s;
-  -moz-animation: slide-in 0.6s;
-  animation: slide-in 0.6s;
+  -webkit-animation: slide-in 0.3s;
+  -moz-animation: slide-in 0.3s;
+  animation: slide-in 0.3s;
 }
 .cd-headline.slide b.is-hidden {
-  -webkit-animation: slide-out 0.6s;
-  -moz-animation: slide-out 0.6s;
-  animation: slide-out 0.6s;
+  -webkit-animation: slide-out 0.3s;
+  -moz-animation: slide-out 0.3s;
+  animation: slide-out 0.3;
 }
 
 @-webkit-keyframes slide-in {
@@ -165,5 +165,4 @@ xslide
     transform: translateY(100%);
   }
 }
-/* -------------------------------- 
-
+/* --------------------------------
