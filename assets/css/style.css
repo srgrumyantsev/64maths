@@ -411,6 +411,10 @@ ul.social-icons li {
   color: #fff;
 }
 
+#call-to-action  .a-contact {
+    color : #fff
+}
+
 #call-to-action .block {
   position: relative;
   z-index: 9;
