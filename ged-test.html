@@ -7,6 +7,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" href="favicon.ico">
         <title>64maths - GED pretest</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
         <meta name="description" content="Take a free GED pretest and see if you are ready for the real exam!">
         <meta name="keywords" content="">
         <meta name="author" content="64 maths">
@@ -88,28 +92,57 @@
 
 <!--Quiz section -->
 
+    <!--q1-->
      <div class = "quiz-section">
         <div class="quest" id="q1">
           <div class="head">
           </div>
           <div class="question">
-            <h3>What is (-10) + (-7)?</h3>
+            <h3>Which value is one of the solutions of \(ax^2 + bx + c = 0\) ?</h3>
           </div>
           <div class="options">
-            <div class="option" id="11option">
+            <div class="option" id="q1option1">
               <h3 id="1o1">-3</h3>
             </div>
-            <div class="option" id="12option">
-              <h3 id="1o2">17</h3>
+            <div class="option" id="q1option2">
+              <h3 id="1o2">3</h3>
             </div>
-            <div class="option" id="13option">
-              <h3 id="1o3">-17</h3>
+            <div class="option" id="q1option3">
+              <h3 id="1o3">-9</h3>
             </div>
-            <div class="option" id="14option">
-              <h3 id="1o4">3</h3>
+            <div class="option" id="q1option4">
+              <h3 id="1o4">36</h3>
             </div>
           </div>
         </div>
+
+  <!--q1-->
+
+        <div class = "quiz-section">
+           <div class="quest" id="q2">
+             <div class="head">
+             </div>
+             <div class="question">
+               <h3>Write \(136 \over 32 \) as a mixed number in lowest terms. </h3>
+             </div>
+             <div class="options">
+               <div class="option" id="q2option1">
+                 <h3 id="2o1">\(17 \over 4 \)</h3>
+               </div>
+               <div class="option" id="q2option2">
+                 <h3 id="2o2">4 \(1 \over 4 \)</h3>
+               </div>
+               <div class="option" id="q2option3">
+                 <h3 id="2o3">4\(8 \over 32 \)</h3>
+               </div>
+               <div class="option" id="q2option4">
+                 <h3 id="2o4">4\(4 \over 16 \)</h3>
+               </div>
+             </div>
+           </div>
+
+
+        <!-- DROPDOWN TEMPLATE
 
         <div class="quest" id="q2">
           <div class="head">
@@ -140,16 +173,79 @@
           </div>
         </div>
 
+      -->
+
+    <!--q3-->
         <div class="quest" id="q3">
           <div class="head">
           </div>
           <div class="question">
 
-            <h3>Type yes:   <span><input type='text' /></span> <input type="submit" id='q3text' value="Submit"/></h3>
+            <h3>Add 13.50 + 17.995 + 6.008. Type your answer in the box: <input id='q3ans' type = 'text'>
+              <a id = 'submit_q3_button' onclick = 'çheck_q3_ans()' href = 'javascript:void(0);' title = 'Submit'>Submit</a>
+            </h3>
           </div>
+        </div>
 
         </div>
     </div>
+
+  <!--q4-->
+
+           <div class="quest" id="q4">
+             <div class="head">
+             </div>
+             <div class="question">
+               <h3>Which fraction equals to 0.875?</h3>
+             </div>
+             <div class="options">
+               <div class="option" id="q4option1">
+                 <h3 id="4o1">\(87.5 \over 100 \)</h3>
+               </div>
+               <div class="option" id="q4option2">
+                 <h3 id="4o2">\(151 \over 200 \)</h3>
+               </div>
+               <div class="option" id="q4option3">
+                 <h3 id="4o3">\(7 \over 8 \)</h3>
+               </div>
+               <div class="option" id="q4option4">
+                 <h3 id="4o4">\(7 \over 80 \)</h3>
+               </div>
+             </div>
+           </div>
+
+   <!--q5-->
+
+         <div class = "quiz-section">
+            <div class="quest" id="q5">
+              <div class="head">
+              </div>
+              <div class="question">
+                <h3>Select any pair of points on the graph that show why it is not a graph of a function</h3>
+                <br>
+                <img src = 'images/ged/circle.PNG' width="40%" alt="Graph of a circle" />
+                <br>
+              </div>
+              <div class="options">
+                <div class="option" id="q5option1">
+                  <h3 id="5o1">A and C</h3>
+                </div>
+                <div class="option" id="q5option2">
+                  <h3 id="5o2">G and E</h3>
+                </div>
+                <div class="option" id="q5option3">
+                  <h3 id="5o3">C and G</h3>
+                </div>
+                <div class="option" id="q5option4">
+                  <h3 id="5o4">C and E</h3>
+                </div>
+              </div>
+              <br>
+            </div>
+  </div>
+
+
+
 
         <!-- jquery -->
         <script src="plugins/jQurey/jquery.min.js"></script>
