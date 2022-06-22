@@ -28,6 +28,22 @@ $(document).ready(function() {
   $("#q28").hide();
   $("#q29").hide();
   $("#q30").hide();
+  $("#q31").hide();
+  $("#q32").hide();
+  $("#q33").hide();
+  $("#q34").hide();
+  $("#q35").hide();
+  $("#q36").hide();
+  $("#q37").hide();
+  $("#q38").hide();
+  $("#q39").hide();
+  $("#q40").hide();
+  $("#q41").hide();
+  $("#q42").hide();
+  $("#q43").hide();
+  $("#q44").hide();
+  $("#q45").hide();
+  $("#q46").hide();
 
   var score = 0;
 
@@ -682,7 +698,7 @@ $(document).ready(function() {
     $("#q26").slideUp(500);
   });
 
-  $("#q25option4").click(function() {
+  $("#q26option4").click(function() {
     $("#q26option4").addClass("wrong");
     $("#q27").slideDown(1000);
     $("#q26").slideUp(500);
@@ -772,7 +788,7 @@ $(document).ready(function() {
 
   $("#q30option3").click(function() {
     $("#q30option3").addClass("right");
-    score++
+    score++;
     $("#q31").slideDown(1000);
     $("#q30").slideUp(500);
   });
@@ -783,6 +799,417 @@ $(document).ready(function() {
     $("#q30").slideUp(500);
   });
 
+  /*q31*/
+  $("#submit_q31_button").click(function() {
+    var ans = document.getElementById('q31ans').value;
+    if (ans == '27') {
+      score++;
+      $("#q32").slideDown(1000);
+      $("#q31").slideUp(500);
+    } else {
+      $("#q32").slideDown(1000);
+      $("#q31").slideUp(500);
+    }
+  })
+
+  /*q32*/
+
+  $("#q32option1").click(function() {
+    $("#q32option1").addClass("wrong");
+    $("#q33").slideDown(1000);
+    $("#q32").slideUp(500);
+  });
+
+  $("#q32option2").click(function() {
+    $("#q32option2").addClass("right");
+    score++;
+    $("#q33").slideDown(1000);
+    $("#q32").slideUp(500);
+  });
+
+  $("#q32option3").click(function() {
+    $("#q32option3").addClass("wrong");
+    $("#q33").slideDown(1000);
+    $("#q32").slideUp(500);
+  });
+
+  $("#q32option4").click(function() {
+    $("#q32option4").addClass("wrong");
+    $("#q33").slideDown(1000);
+    $("#q32").slideUp(500);
+  });
+
+  /*q33*/
+
+  $("#q33option1").click(function() {
+    $("#q33option1").addClass("wrong");
+    $("#q34").slideDown(1000);
+    $("#q33").slideUp(500);
+  });
+
+  $("#q33option2").click(function() {
+    $("#q33option2").addClass("wrong");
+    $("#q34").slideDown(1000);
+    $("#q33").slideUp(500);
+  });
+
+  $("#q33option3").click(function() {
+    $("#q33option3").addClass("right");
+    score++;
+    $("#q34").slideDown(1000);
+    $("#q33").slideUp(500);
+  });
+
+  $("#q33option4").click(function() {
+    $("#q33option4").addClass("wrong");
+    $("#q34").slideDown(1000);
+    $("#q33").slideUp(500);
+  });
+
+  /*q34*/
+  $("#submit_q34_button").click(function() {
+    var ans = document.getElementById('q34ans').value;
+    if (ans == '0.0095') {
+      score++;
+      $("#q35").slideDown(1000);
+      $("#q34").slideUp(500);
+    } else {
+      $("#q35").slideDown(1000);
+      $("#q34").slideUp(500);
+    }
+  })
+
+  /*q35*/
+
+  $("#q35option1").click(function() {
+    $("#q35option1").addClass("right");
+    score++;
+    $("#q36").slideDown(1000);
+    $("#q35").slideUp(500);
+  });
+
+  $("#q35option2").click(function() {
+    $("#q35option2").addClass("wrong");
+    $("#q36").slideDown(1000);
+    $("#q35").slideUp(500);
+  });
+
+  $("#q35option3").click(function() {
+    $("#q35option3").addClass("wrong");
+    $("#q36").slideDown(1000);
+    $("#q35").slideUp(500);
+  });
+
+  $("#q35option4").click(function() {
+    $("#q35option4").addClass("wrong");
+    $("#q36").slideDown(1000);
+    $("#q35").slideUp(500);
+  });
+
+  /*q36*/
+
+  $("#q36option1").click(function() {
+    $("#q36option1").addClass("wrong");
+    $("#q37").slideDown(1000);
+    $("#q36").slideUp(500);
+  });
+
+  $("#q36option2").click(function() {
+    $("#q36option2").addClass("wrong");
+    $("#q37").slideDown(1000);
+    $("#q36").slideUp(500);
+  });
+
+  $("#q36option3").click(function() {
+    $("#q36option3").addClass("right");
+    score++;
+    $("#q37").slideDown(1000);
+    $("#q36").slideUp(500);
+  });
+
+  $("#q36option4").click(function() {
+    $("#q36option4").addClass("wrong");
+    $("#q37").slideDown(1000);
+    $("#q36").slideUp(500);
+  });
+
+  /*q37*/
+
+  $("#q37option1").click(function() {
+    $("#q37option1").addClass("wrong");
+    $("#q38").slideDown(1000);
+    $("#q37").slideUp(500);
+  });
+
+  $("#q37option2").click(function() {
+    $("#q37option2").addClass("wrong");
+    $("#q38").slideDown(1000);
+    $("#q37").slideUp(500);
+  });
+
+  $("#q37option3").click(function() {
+    $("#q37option3").addClass("right");
+    score++;
+    $("#q38").slideDown(1000);
+    $("#q37").slideUp(500);
+  });
+
+  $("#q37option4").click(function() {
+    $("#q37option4").addClass("wrong");
+    $("#q38").slideDown(1000);
+    $("#q37").slideUp(500);
+  });
+
+  /*q38*/
+
+  $("#q38option1").click(function() {
+    $("#q38option1").addClass("wrong");
+    $("#q39").slideDown(1000);
+    $("#q38").slideUp(500);
+  });
+
+  $("#q38option2").click(function() {
+    $("#q38option2").addClass("wrong");
+    $("#q39").slideDown(1000);
+    $("#q38").slideUp(500);
+  });
+
+  $("#q38option3").click(function() {
+    $("#q38option3").addClass("wrong");
+    $("#q39").slideDown(1000);
+    $("#q38").slideUp(500);
+  });
+
+  $("#q38option4").click(function() {
+    $("#q38option4").addClass("right");
+    score++;
+    $("#q39").slideDown(1000);
+    $("#q38").slideUp(500);
+  });
+
+  /*q39*/
+
+  $("#q39option1").click(function() {
+    $("#q39option1").addClass("wrong");
+    $("#q40").slideDown(1000);
+    $("#q39").slideUp(500);
+  });
+
+  $("#q39option2").click(function() {
+    $("#q39option2").addClass("right");
+    score++;
+    $("#q40").slideDown(1000);
+    $("#q39").slideUp(500);
+  });
+
+  $("#q39option3").click(function() {
+    $("#q39option3").addClass("wrong");
+    $("#q40").slideDown(1000);
+    $("#q39").slideUp(500);
+  });
+
+  $("#q39option4").click(function() {
+    $("#q39option4").addClass("wrong");
+    $("#q40").slideDown(1000);
+    $("#q39").slideUp(500);
+  });
+
+  /*q40*/
+
+  $("#q40option1").click(function() {
+    $("#q40option1").addClass("wrong");
+    $("#q41").slideDown(1000);
+    $("#q40").slideUp(500);
+  });
+
+  $("#q40option2").click(function() {
+    $("#q40option2").addClass("wrong");
+    $("#q41").slideDown(1000);
+    $("#q40").slideUp(500);
+  });
+
+  $("#q40option3").click(function() {
+    $("#q40option3").addClass("right");
+    score++;
+    $("#q41").slideDown(1000);
+    $("#q40").slideUp(500);
+  });
+
+  $("#q40option4").click(function() {
+    $("#q40option4").addClass("wrong");
+    $("#q41").slideDown(1000);
+    $("#q40").slideUp(500);
+  });
+
+  /*q41*/
+
+  $("#q41option1").click(function() {
+    $("#q41option1").addClass("wrong");
+    $("#q42").slideDown(1000);
+    $("#q41").slideUp(500);
+  });
+
+  $("#q41option2").click(function() {
+    $("#q41option2").addClass("wrong");
+    $("#q42").slideDown(1000);
+    $("#q41").slideUp(500);
+  });
+
+  $("#q41option3").click(function() {
+    $("#q41option3").addClass("wrong");
+    $("#q42").slideDown(1000);
+    $("#q41").slideUp(500);
+  });
+
+  $("#q41option4").click(function() {
+    $("#q41option4").addClass("right");
+    score++;
+    $("#q42").slideDown(1000);
+    $("#q41").slideUp(500);
+  });
+
+  /*q42*/
+
+  $("#q42option1").click(function() {
+    $("#q42option1").addClass("wrong");
+    $("#q43").slideDown(1000);
+    $("#q42").slideUp(500);
+  });
+
+  $("#q42option2").click(function() {
+    $("#q42option2").addClass("wrong");
+    $("#q43").slideDown(1000);
+    $("#q42").slideUp(500);
+  });
+
+  $("#q42option3").click(function() {
+    $("#q42option3").addClass("right");
+    score++;
+    $("#q43").slideDown(1000);
+    $("#q42").slideUp(500);
+  });
+
+  $("#q42option4").click(function() {
+    $("#q42option4").addClass("wrong");
+    $("#q43").slideDown(1000);
+    $("#q42").slideUp(500);
+  });
+
+  /*q43*/
+
+  $("#q43option1").click(function() {
+    $("#q43option1").addClass("wrong");
+    $("#q44").slideDown(1000);
+    $("#q43").slideUp(500);
+  });
+
+  $("#q43option2").click(function() {
+    $("#q43option2").addClass("wrong");
+    $("#q44").slideDown(1000);
+    $("#q43").slideUp(500);
+  });
+
+  $("#q43option3").click(function() {
+    $("#q43option3").addClass("right");
+    score++;
+    $("#q44").slideDown(1000);
+    $("#q43").slideUp(500);
+  });
+
+  $("#q43option4").click(function() {
+    $("#q43option4").addClass("wrong");
+    $("#q44").slideDown(1000);
+    $("#q43").slideUp(500);
+  });
+
+  /*q44*/
+
+  $("#q44option1").click(function() {
+    $("#q44option1").addClass("wrong");
+    $("#q45").slideDown(1000);
+    $("#q44").slideUp(500);
+  });
+
+  $("#q44option2").click(function() {
+    $("#q44option2").addClass("right");
+    score++;
+    $("#q45").slideDown(1000);
+    $("#q44").slideUp(500);
+  });
+
+  $("#q44option3").click(function() {
+    $("#q44option3").addClass("wrong");
+    $("#q45").slideDown(1000);
+    $("#q44").slideUp(500);
+  });
+
+  $("#q44option4").click(function() {
+    $("#q44option4").addClass("wrong");
+    $("#q45").slideDown(1000);
+    $("#q44").slideUp(500);
+  });
+
+  /*q45*/
+
+  $("#q45option1").click(function() {
+    $("#q45option1").addClass("wrong");
+    $("#q46").slideDown(1000);
+    $("#q45").slideUp(500);
+  });
+
+  $("#q45option2").click(function() {
+    $("#q45option2").addClass("wrong");
+    $("#q46").slideDown(1000);
+    $("#q45").slideUp(500);
+  });
+
+  $("#q45option3").click(function() {
+    $("#q45option3").addClass("wrong");
+    $("#q46").slideDown(1000);
+    $("#q45").slideUp(500);
+  });
+
+  $("#q45option4").click(function() {
+    $("#q45option4").addClass("right");
+    score++;
+    $("#q46").slideDown(1000);
+    $("#q45").slideUp(500);
+  });
+
+  /*q46*/
+
+  $("#q46option1").click(function() {
+    $("#q46option1").addClass("right");
+    score++;
+    $("#q46").slideUp(500);
+    var final_score = 100 + Math.round((score/46) * 100)
+    localStorage.setItem('ged-score',final_score);
+    window.location.replace('ged-test-result.html');
+  });
+
+  $("#q46option2").click(function() {
+    $("#q46option2").addClass("wrong");
+    $("#q46").slideUp(500);
+    var final_score = 100 + Math.round((score/46) * 100)
+    localStorage.setItem('ged-score',final_score);
+    window.location.replace('ged-test-result.html');
+  });
+
+  $("#q46option3").click(function() {
+    $("#q46option3").addClass("wrong");
+    $("#q46").slideUp(500);
+    var final_score = 100 + Math.round((score/46) * 100)
+    localStorage.setItem('ged-score',final_score);
+    window.location.replace('ged-test-result.html');
+  });
+
+  $("#q46option4").click(function() {
+    $("#q46option4").addClass("wrong");
+    $("#q46").slideUp(500);
+    var final_score = 100 + Math.round((score/46) * 100)
+    localStorage.setItem('ged-score',final_score);
+    window.location.replace('ged-test-result.html');
+  });
 
 
 });
