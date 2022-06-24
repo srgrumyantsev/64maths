@@ -372,7 +372,7 @@ a:hover {
 
 #call-to-action  .a-contact {
     color : #fff
-    
+
 }
 
 #call-to-action .block .btn-contact {
@@ -1471,3 +1471,7 @@ span {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+    background-color: #3498DB !important;
+}

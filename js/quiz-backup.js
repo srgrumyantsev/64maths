@@ -1,17 +1,50 @@
 $(document).ready(function() {
+  $("#q2").hide();
+  $("#q3").hide();
+  $("#q4").hide();
+  $("#q5").hide();
+  $("#q6").hide();
+  $("#q7").hide();
+  $("#q8").hide();
+  $("#q9").hide();
+  $("#q10").hide();
+  $("#q11").hide();
+  $("#q12").hide();
+  $("#q13").hide();
+  $("#q14").hide();
+  $("#q15").hide();
+  $("#q16").hide();
+  $("#q17").hide();
+  $("#q18").hide();
+  $("#q19").hide();
+  $("#q20").hide();
+  $("#q21").hide();
+  $("#q22").hide();
+  $("#q23").hide();
+  $("#q24").hide();
+  $("#q25").hide();
+  $("#q26").hide();
+  $("#q27").hide();
+  $("#q28").hide();
+  $("#q29").hide();
+  $("#q30").hide();
+  $("#q31").hide();
+  $("#q32").hide();
+  $("#q33").hide();
+  $("#q34").hide();
+  $("#q35").hide();
+  $("#q36").hide();
+  $("#q37").hide();
+  $("#q38").hide();
+  $("#q39").hide();
+  $("#q40").hide();
+  $("#q41").hide();
+  $("#q42").hide();
+  $("#q43").hide();
+  $("#q44").hide();
+  $("#q45").hide();
+  $("#q46").hide();
 
-$(".quest").hide();
-$("#q1").show();
-
-/*
-var divsToHide = document.getElementsByClassName("quest"); //divsToHide is an array
- for(var i = 1; i < divsToHide.length; i++){
-    $(divsToHide[i]).hide();
-  //   divsToHide[i].style.visibility = "hidden"; // or
-  //   divsToHide[i].style.display = "none"; // depending on what you're doing
-
- }
- */
   var score = 0;
 
   /* q1 */
