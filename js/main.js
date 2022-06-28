@@ -43,156 +43,141 @@
     /* ========================================================================= */
     /*   Contact Form Validating
     /* ========================================================================= */
-    document.getElementById("contact-form").addEventListener("submit",function(evt)
-      {
 
-      var response = grecaptcha.getResponse();
-      if(response.length == 0)
-      {
-        //reCaptcha not verified
-        alert("please verify you are humann!");
-        evt.preventDefault();
-        return false;
-      }
-      //captcha verified
-      //do the rest of your validations here
+    document.getElementById("my_captcha_form").addEventListener("submit",function(evt)
+    {
 
-      $('#contact-form').validate({
-          rules: {
-              name: {
-                  required: true,
-                  minlength: 2
-              },
-              email: {
-                  required: true,
-                  email: true
-              },
-              subject: {
-                  required: false,
-              },
-              message: {
-                  required: true,
-              },
-          },
-          messages: {
-              user_name: {
-                  required: "Please let me know your name.",
-                  minlength: "Your name must consist of at least 2 characters"
-              },
-              email: {
-                  required: "Please put your email address",
-              },
-              message: {
-                  required: "Write your message here",
-                  minlength: "Your message must consist of at least 2 characters"
-              },
-          },
-          submitHandler: function (form) {
-              $(form).ajaxSubmit({
-                  type: "POST",
-                //  data: $(form).serialize(),
-                  url: "https://script.google.com/macros/s/AKfycbzmiRN0hYr4hpX21H6cYrRaQ-zRBC-Pui3r11RojcRJDCKk9eHcCz8zpIXbieVQ5quU/exec",
-                  success: function () {
-                      $('#contact-form #success').fadeIn();
-                  },
-                  error: function () {
-                      $('#contact-form #error').fadeIn();
-                  }
-              });
-          }
-      });
-
-    });
-
-
-
-}(jQuery));
-
-
-
-jQuery(document).ready(function () {
-    "use strict";
-    new WOW().init();
-
-
-    (function () {
-        jQuery('.smooth-scroll').scrollingTo();
-    }());
-
-});
-
-
-
-
-$(document).ready(function () {
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
-            $(".navbar-brand a").css("color", "#fff");
-            $(".top-bar").removeClass("animated-header");
-        } else {
-            $(".navbar-brand a").css("color", "inherit");
-            $(".top-bar").addClass("animated-header");
-        }
-    });
-
-    $('.clients-logo-slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-
-
-});
-
-
-
-// fancybox
-$(".fancybox").fancybox({
-    padding: 0,
-
-    openEffect: 'elastic',
-    openSpeed: 450,
-
-    closeEffect: 'elastic',
-    closeSpeed: 350,
-
-    closeClick: true,
-    helpers: {
-        title: {
-            type: 'inside'
+    var response = grecaptcha.getResponse();
+    if(response.length == 0)
+    {
+      //reCaptcha not verified
+      alert("please verify you are humann!");
+      evt.preventDefault();
+      return false;
+    }
+    //captcha verified
+    //do the rest of your validations here
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            subject: {
+                required: false,
+            },
+            message: {
+                required: true,
+            },
         },
-        overlay: {
-            css: {
-                'background': 'rgba(0,0,0,0.8)'
-            }
+        messages: {
+            user_name: {
+                required: "Please let me know your name.",
+                minlength: "Your name must consist of at least 2 characters"
+            },
+            email: {
+                required: "Please put your email address",
+            },
+            message: {
+                required: "Write your message here",
+                minlength: "Your message must consist of at least 2 characters"
+            },
+        },
+        submitHandler: function (form) {
+            $(form).ajaxSubmit({
+                type: "POST",
+              //  data: $(form).serialize(),
+                url: "https://script.google.com/macros/s/AKfycbzmiRN0hYr4hpX21H6cYrRaQ-zRBC-Pui3r11RojcRJDCKk9eHcCz8zpIXbieVQ5quU/exec",
+                success: function () {
+                    $('#contact-form #success').fadeIn();
+                },
+                error: function () {
+                    $('#contact-form #error').fadeIn();
+                }
+            });
         }
-    }
-});
+    });
 
-grecaptcha.ready(function () {
-    if (grecaptcha.getResponse() === "") {
-        alert("Please validate the Google reCaptcha.");
-    } else {
-        alert("Successful validation! Now you can submit this form to your server side processing.");
-    }
-});
+  }); //end of verification
+
+  jQuery(document).ready(function () {
+      "use strict";
+      new WOW().init();
+
+
+      (function () {
+          jQuery('.smooth-scroll').scrollingTo();
+      }());
+
+  });
+
+
+
+
+  $(document).ready(function () {
+
+      $(window).scroll(function () {
+          if ($(window).scrollTop() > 50) {
+              $(".navbar-brand a").css("color", "#fff");
+              $(".top-bar").removeClass("animated-header");
+          } else {
+              $(".navbar-brand a").css("color", "inherit");
+              $(".top-bar").addClass("animated-header");
+          }
+      });
+
+      $('.clients-logo-slider').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+
+
+  });
+
+  
+  // fancybox
+  $(".fancybox").fancybox({
+      padding: 0,
+
+      openEffect: 'elastic',
+      openSpeed: 450,
+
+      closeEffect: 'elastic',
+      closeSpeed: 350,
+
+      closeClick: true,
+      helpers: {
+          title: {
+              type: 'inside'
+          },
+          overlay: {
+              css: {
+                  'background': 'rgba(0,0,0,0.8)'
+              }
+          }
+      }
+  });
