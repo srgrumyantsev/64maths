@@ -44,7 +44,7 @@
     /*   Contact Form Validating
     /* ========================================================================= */
 
-    document.getElementById("my_captcha_form").addEventListener("submit",function(evt)
+    document.getElementById("contact-form").addEventListener("submit",function(evt)
     {
 
     var response = grecaptcha.getResponse();
