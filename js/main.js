@@ -55,6 +55,7 @@
       evt.preventDefault();
       return false;
     }
+          }); //end of verification
     //captcha verified
     //do the rest of your validations here
     $('#contact-form').validate({
@@ -102,7 +103,7 @@
         }
     });
 
-  }); //end of verification
+ 
 
   jQuery(document).ready(function () {
       "use strict";
