@@ -43,21 +43,22 @@
     /* ========================================================================= */
     /*   Contact Form Validating
     /* ========================================================================= */
-
+    
     document.getElementById("contact-form").addEventListener("submit",function(evt)
-    {
+{
 
-    var response = grecaptcha.getResponse();
-    if(response.length == 0)
-    {
-      //reCaptcha not verified
-      alert("please verify you are humann!");
-      evt.preventDefault();
-      return false;
-    }
-          }); //end of verification
-    //captcha verified
-    //do the rest of your validations here
+var response = grecaptcha.getResponse();
+if(response.length == 0)
+{
+  //reCaptcha not verified
+  alert("please verify you are humann!");
+  evt.preventDefault();
+  return false;
+}
+//captcha verified
+//do the rest of your validations here
+}); //end of verification
+
     $('#contact-form').validate({
         rules: {
             name: {
@@ -89,6 +90,7 @@
             },
         },
         submitHandler: function (form) {
+
             $(form).ajaxSubmit({
                 type: "POST",
               //  data: $(form).serialize(),
@@ -103,82 +105,86 @@
         }
     });
 
- 
 
-  jQuery(document).ready(function () {
-      "use strict";
-      new WOW().init();
-
-
-      (function () {
-          jQuery('.smooth-scroll').scrollingTo();
-      }());
-
-  });
+}(jQuery));
 
 
 
+jQuery(document).ready(function () {
+    "use strict";
+    new WOW().init();
 
-  $(document).ready(function () {
 
-      $(window).scroll(function () {
-          if ($(window).scrollTop() > 50) {
-              $(".navbar-brand a").css("color", "#fff");
-              $(".top-bar").removeClass("animated-header");
-          } else {
-              $(".navbar-brand a").css("color", "inherit");
-              $(".top-bar").addClass("animated-header");
+    (function () {
+        jQuery('.smooth-scroll').scrollingTo();
+    }());
+
+});
+
+
+//captcha verification
+
+
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 50) {
+            $(".navbar-brand a").css("color", "#fff");
+            $(".top-bar").removeClass("animated-header");
+        } else {
+            $(".navbar-brand a").css("color", "inherit");
+            $(".top-bar").addClass("animated-header");
+        }
+    });
+
+    $('.clients-logo-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
           }
+        ]
       });
 
-      $('.clients-logo-slider').slick({
-          dots: false,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          arrows: false,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
+
+});
+
+
+// fancybox
+$(".fancybox").fancybox({
+    padding: 0,
+
+    openEffect: 'elastic',
+    openSpeed: 450,
+
+    closeEffect: 'elastic',
+    closeSpeed: 350,
+
+    closeClick: true,
+    helpers: {
+        title: {
+            type: 'inside'
+        },
+        overlay: {
+            css: {
+                'background': 'rgba(0,0,0,0.8)'
             }
-          ]
-        });
-
-
-  });
-
-  
-  // fancybox
-  $(".fancybox").fancybox({
-      padding: 0,
-
-      openEffect: 'elastic',
-      openSpeed: 450,
-
-      closeEffect: 'elastic',
-      closeSpeed: 350,
-
-      closeClick: true,
-      helpers: {
-          title: {
-              type: 'inside'
-          },
-          overlay: {
-              css: {
-                  'background': 'rgba(0,0,0,0.8)'
-              }
-          }
-      }
-  });
+        }
+    }
+});
